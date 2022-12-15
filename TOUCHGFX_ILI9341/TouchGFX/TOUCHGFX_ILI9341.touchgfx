@@ -1,0 +1,206 @@
+{
+  "Application": {
+    "Screens": [
+      {
+        "Name": "Screen1",
+        "Components": [
+          {
+            "Type": "Box",
+            "Name": "box1",
+            "X": 1,
+            "Width": 104,
+            "Height": 240,
+            "Color": {
+              "Red": 25,
+              "Green": 25,
+              "Blue": 230
+            }
+          },
+          {
+            "Type": "Box",
+            "Name": "box2",
+            "X": 216,
+            "Width": 105,
+            "Height": 240,
+            "Color": {
+              "Red": 235,
+              "Green": 52,
+              "Blue": 52
+            }
+          },
+          {
+            "Type": "Box",
+            "Name": "box3",
+            "X": 105,
+            "Width": 111,
+            "Height": 240,
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea1",
+            "X": 126,
+            "Y": 108,
+            "Width": 68,
+            "Height": 24,
+            "TextId": "__SingleUse_WUW0",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 13,
+              "Green": 3,
+              "Blue": 148
+            },
+            "AutoSize": true
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Interaction1",
+            "Trigger": {
+              "Type": "TriggerOnEveryTick",
+              "TickCount": 500
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionSlide",
+              "ScreenTransitionDirection": "East",
+              "ActionComponent": "Screen2"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "Screen2",
+        "CanvasBufferSize": 4800,
+        "Components": [
+          {
+            "Type": "Box",
+            "Name": "box1",
+            "Width": 320,
+            "Height": 240,
+            "Color": {
+              "Red": 216,
+              "Green": 220,
+              "Blue": 232
+            }
+          },
+          {
+            "Type": "BoxProgress",
+            "Name": "boxProgress1",
+            "X": 68,
+            "Y": 211,
+            "Width": 184,
+            "Height": 20,
+            "Color": {
+              "Green": 151,
+              "Blue": 255
+            },
+            "Direction": "Right",
+            "Style": "Style3",
+            "FileNameBackground": "__designer\\Blue_ProgressIndicators_bg_medium_progress_indicator_bg_square_0_degrees.png",
+            "IndicatorPositionX": 2,
+            "IndicatorPositionY": 2,
+            "IndicatorPositionWidth": 180,
+            "IndicatorPositionHeight": 16,
+            "ProgressRangeMax": 100,
+            "ProgressInitialValue": 60
+          },
+          {
+            "Type": "Container",
+            "Name": "container1",
+            "Width": 320,
+            "Height": 240,
+            "Components": []
+          },
+          {
+            "Type": "CircleProgress",
+            "Name": "circleProgress1",
+            "X": 22,
+            "Y": 68,
+            "Width": 104,
+            "Height": 104,
+            "FileNameProgress": "__designer\\Blue_ProgressIndicators_fill_medium_circle_indicator_fill_full.png",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "CenterX": 52.0,
+            "CenterY": 52.0,
+            "Radius": 50.0,
+            "EndAngle": 360.0,
+            "CapPrecision": "Butt",
+            "Style": "Style5",
+            "FileNameBackground": "__designer\\Blue_ProgressIndicators_bg_medium_circle_indicator_bg_full.png",
+            "ProgressRangeMax": 100,
+            "ProgressInitialValue": 60
+          }
+        ],
+        "Interactions": []
+      }
+    ],
+    "CustomContainerDefinitions": [
+      {
+        "Name": "CustomContainer1",
+        "Width": 320,
+        "Height": 240,
+        "Components": [],
+        "Interactions": []
+      }
+    ],
+    "Name": "MyApplication",
+    "Resolution": {
+      "Width": 320,
+      "Height": 240
+    },
+    "SelectedColorDepth": 16,
+    "StartupScreenName": "Screen1",
+    "SelectedStartupLanguage": "GB",
+    "Skin": "Blue",
+    "TouchGfxPath": "../Middlewares/ST/touchgfx",
+    "UIPath": ".",
+    "AvailableColorDepths": [
+      16
+    ],
+    "AvailableLCDs": {
+      "16": "LCD16bpp"
+    },
+    "AvailableSections": [
+      "ExtFlashSection",
+      "IntFlashSection"
+    ],
+    "AvailableResolutions": [
+      {
+        "Width": 320,
+        "Height": 240
+      }
+    ],
+    "PhysicalButtons": [],
+    "FrameworkFeatures": {
+      "LCD16bpp": {
+        "Id": "LCD16bpp",
+        "IsEnabled": true
+      }
+    },
+    "GenerateAssetsCommand": "make -f simulator/gcc/Makefile assets -j8",
+    "PostGenerateCommand": "touchgfx update_project --project-file=simulator/msvs/Application.vcxproj",
+    "PostGenerateTargetCommand": "touchgfx update_project",
+    "CompileSimulatorCommand": "make -f simulator/gcc/Makefile -j8",
+    "RunSimulatorCommand": "build\\bin\\simulator.exe",
+    "LandscapeSkinX": 0,
+    "LandscapeSkinY": 0,
+    "PortraitSkinX": 0,
+    "PortraitSkinY": 0,
+    "DisplayOrientation": "Landscape",
+    "Family": "STM32F7",
+    "Platform": "m7",
+    "ProjectFile": "../TOUCHGFX_ILI9341.ioc",
+    "OptionalComponentsRoot": "../Middlewares/ST/touchgfx_components",
+    "OptionalComponents": []
+  },
+  "Version": "4.20.0"
+}
