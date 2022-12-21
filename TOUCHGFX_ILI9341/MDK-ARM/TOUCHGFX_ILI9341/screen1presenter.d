@@ -187,6 +187,7 @@ touchgfx_ili9341/screen1presenter.o: \
   ..\touchgfx\gui\include\gui\model\ModelListener.hpp \
   ..\middlewares\st\touchgfx\framework\include\touchgfx\widgets\Box.hpp \
   ..\middlewares\st\touchgfx\framework\include\touchgfx\widgets\Widget.hpp \
+  ..\middlewares\st\touchgfx\framework\include\touchgfx\widgets\Image.hpp \
   ..\middlewares\st\touchgfx\framework\include\touchgfx\widgets\TextArea.hpp \
   ..\middlewares\st\touchgfx\framework\include\touchgfx\TypedText.hpp \
   ..\middlewares\st\touchgfx\framework\include\touchgfx\Texts.hpp

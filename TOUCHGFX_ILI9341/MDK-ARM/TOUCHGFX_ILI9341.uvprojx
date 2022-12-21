@@ -470,6 +470,16 @@
               <FileType>1</FileType>
               <FilePath>../Core/Src/stm32f7xx_hal_msp.c</FilePath>
             </File>
+            <File>
+              <FileName>IR_RC5.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Core\Inc\IR_RC5.h</FilePath>
+            </File>
+            <File>
+              <FileName>IR_RC5.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Core\Src\IR_RC5.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -781,6 +791,11 @@
               <FilePath>../touchgfx/generated/fonts/src/font_verdana_40_4bpp_0.cpp</FilePath>
             </File>
             <File>
+              <FileName>Font_verdanai_20_4bpp_0.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../touchgfx/generated/fonts/src/font_verdanai_20_4bpp_0.cpp</FilePath>
+            </File>
+            <File>
               <FileName>Font_verdanaz_20_4bpp_0.cpp</FileName>
               <FileType>8</FileType>
               <FilePath>../touchgfx/generated/fonts/src/font_verdanaz_20_4bpp_0.cpp</FilePath>
@@ -801,21 +816,6 @@
               <FilePath>../touchgfx/generated/fonts/src/generatedfont.cpp</FilePath>
             </File>
             <File>
-              <FileName>image_Blue_Backgrounds_Main_bg_320x240px.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../touchgfx/generated/images/src/__designer/image_blue_backgrounds_main_bg_320x240px.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>image_Blue_Check_buttons_Check_Round_mark_pressed.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../touchgfx/generated/images/src/__designer/image_blue_check_buttons_check_round_mark_pressed.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>image_Blue_Icons_Home_32.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../touchgfx/generated/images/src/__designer/image_blue_icons_home_32.cpp</FilePath>
-            </File>
-            <File>
               <FileName>image_Blue_ProgressIndicators_bg_medium_circle_indicator_bg_full.cpp</FileName>
               <FileType>8</FileType>
               <FilePath>../touchgfx/generated/images/src/__designer/image_blue_progressindicators_bg_medium_circle_indicator_bg_full.cpp</FilePath>
@@ -831,9 +831,9 @@
               <FilePath>../touchgfx/generated/images/src/__designer/image_blue_progressindicators_fill_medium_circle_indicator_fill_full.cpp</FilePath>
             </File>
             <File>
-              <FileName>image_Dark_Radio_buttons_Radio_RE_button_active.cpp</FileName>
+              <FileName>image_gal_gadot.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>../touchgfx/generated/images/src/__designer/image_dark_radio_buttons_radio_re_button_active.cpp</FilePath>
+              <FilePath>../touchgfx/generated/images/src/image_gal_gadot.cpp</FilePath>
             </File>
             <File>
               <FileName>Kerning_verdana_10_4bpp.cpp</FileName>
@@ -849,6 +849,11 @@
               <FileName>Kerning_verdana_40_4bpp.cpp</FileName>
               <FileType>8</FileType>
               <FilePath>../touchgfx/generated/fonts/src/kerning_verdana_40_4bpp.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>Kerning_verdanai_20_4bpp.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../touchgfx/generated/fonts/src/kerning_verdanai_20_4bpp.cpp</FilePath>
             </File>
             <File>
               <FileName>Kerning_verdanaz_20_4bpp.cpp</FileName>
@@ -884,6 +889,11 @@
               <FileName>Table_verdana_40_4bpp.cpp</FileName>
               <FileType>8</FileType>
               <FilePath>../touchgfx/generated/fonts/src/table_verdana_40_4bpp.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>Table_verdanai_20_4bpp.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../touchgfx/generated/fonts/src/table_verdanai_20_4bpp.cpp</FilePath>
             </File>
             <File>
               <FileName>Table_verdanaz_20_4bpp.cpp</FileName>

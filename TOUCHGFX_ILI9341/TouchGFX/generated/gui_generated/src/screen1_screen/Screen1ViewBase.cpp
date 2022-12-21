@@ -3,6 +3,7 @@
 /*********************************************************************************/
 #include <gui_generated/screen1_screen/Screen1ViewBase.hpp>
 #include <touchgfx/Color.hpp>
+#include <BitmapDatabase.hpp>
 #include <texts/TextKeysAndLanguages.hpp>
 
 Screen1ViewBase::Screen1ViewBase() :
@@ -12,24 +13,16 @@ Screen1ViewBase::Screen1ViewBase() :
     __background.setPosition(0, 0, 320, 240);
     __background.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
 
-    box1.setPosition(1, 0, 104, 240);
-    box1.setColor(touchgfx::Color::getColorFromRGB(25, 25, 230));
+    image1.setXY(0, 0);
+    image1.setBitmap(touchgfx::Bitmap(BITMAP_GAL_GADOT_ID));
 
-    box2.setPosition(216, 0, 105, 240);
-    box2.setColor(touchgfx::Color::getColorFromRGB(235, 52, 52));
-
-    box3.setPosition(105, 0, 111, 240);
-    box3.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
-
-    textArea1.setXY(126, 108);
-    textArea1.setColor(touchgfx::Color::getColorFromRGB(13, 3, 148));
+    textArea1.setXY(38, 36);
+    textArea1.setColor(touchgfx::Color::getColorFromRGB(136, 136, 235));
     textArea1.setLinespacing(0);
-    textArea1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_WUW0));
+    textArea1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_ZOKE));
 
     add(__background);
-    add(box1);
-    add(box2);
-    add(box3);
+    add(image1);
     add(textArea1);
 }
 

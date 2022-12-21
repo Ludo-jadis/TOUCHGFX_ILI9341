@@ -33,6 +33,7 @@
 /* USER CODE BEGIN Includes */
 #include "core.h"
 #include "dwt_stm32_delay.h"
+#include "IR_RC5.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -58,16 +59,7 @@
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
 /* USER CODE BEGIN PFP */
-	uint16_t code ;
-	uint16_t volume =0;
-	int i = 0;
-	int code2;
-	uint16_t cpt_OK =1;
-	
-	uint32_t clk_cycle_start = 0 ;
-	int detection =0;
-	uint32_t microseconds;
-	uint32_t cycle_micro=0;
+uint16_t Volume = 0;
 
 /* USER CODE END PFP */
 
@@ -120,12 +112,13 @@ int main(void)
   MX_TIM2_Init();
   MX_TouchGFX_Init();
   /* USER CODE BEGIN 2 */
-  HAL_TIM_Base_Start_IT(&htim2);
-	cpt_OK = DWT_Delay_Init ();
+  HAL_Delay(200);
+	HAL_TIM_Base_Start_IT(&htim2);
+	DWT_Delay_Init ();
+	IR_RC5_Init();
   ILI9341_Init();
 	touchgfxSignalVSync();
-	microseconds = 1500; //1500 en debug
-	microseconds *= (HAL_RCC_GetHCLKFreq() / 1000000);
+
 	
   /* USER CODE END 2 */
 
@@ -133,12 +126,11 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
+		if ( DWT->CYCCNT > 714603211)
+		{	
+			DWT->CYCCNT = 0;
+		} 
     /* USER CODE END WHILE */
-  code2 = code;
-		if (cpt_OK == 0 )
-		{
-			HAL_GPIO_WritePin(LD1_GPIO_Port, LD1_Pin, GPIO_PIN_SET);
-		}
   MX_TouchGFX_Process();
     /* USER CODE BEGIN 3 */
   }
@@ -205,24 +197,31 @@ void SystemClock_Config(void)
 /* USER CODE BEGIN 4 */
 void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 	{
-
-
+		Volume = Decode_RC5();
+		
+		/*
+		HAL_GPIO_WritePin(LD3_GPIO_Port, LD3_Pin, GPIO_PIN_SET);
 		cycle_micro = (DWT->CYCCNT - clk_cycle_start);
-		if ( i == 14)
+		if ( (i == 14) || cycle_micro > 10921920)
 		{
 			i = 0;
+			//HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_SET);
 			if( code == 0x2FBC || code == 0x0FBC)
 				{
 					volume++;
+					HAL_GPIO_WritePin(LD1_GPIO_Port, LD1_Pin, GPIO_PIN_SET);
+					HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_RESET);
 				}else if(code == 0x2FB8 || code == 0x0FB8)
 					{
-						volume--;
+						volume--;				
+						HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_SET);
+						HAL_GPIO_WritePin(LD1_GPIO_Port, LD1_Pin, GPIO_PIN_RESET);
 					}
 				
-			/*for (int i2=0; i2<16; i2++)
+			for (int i2=0; i2<16; i2++)
 			{
 				code &= ~(1UL << (16-i2));
-			}*/
+			}
 			if (volume > 100 )
 				{
 					volume = 100;
@@ -234,7 +233,6 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 		
 		if ( cycle_micro > microseconds)
 		{	
-			HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_SET);
 			DWT->CYCCNT = 0;
 			clk_cycle_start =0;
 			detection = 0;
@@ -245,9 +243,6 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 		i++;
 		detection = 1;
 		clk_cycle_start = DWT->CYCCNT;
-		HAL_GPIO_WritePin(LD3_GPIO_Port, LD3_Pin, GPIO_PIN_SET);
-
- 
 	}
 	
 	if ((detection == 0 ) & (HAL_GPIO_ReadPin(GPIOE, GPIO_PIN_15) == 0 ))
@@ -256,13 +251,12 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 		i++;
 		detection = 1;
 		clk_cycle_start = DWT->CYCCNT;
-		HAL_GPIO_WritePin(LD3_GPIO_Port, LD3_Pin, GPIO_PIN_SET);
-
 	}
 
 
 	//DWT_Delay_us (2000);
 	//HAL_Delay(2);
+	*/
 
 }
 /* USER CODE END 4 */

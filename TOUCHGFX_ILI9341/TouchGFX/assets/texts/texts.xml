@@ -6,13 +6,7 @@
   <Texts>
     <TextGroup Id="Group1" />
     <TextGroup Id="Unsorted">
-      <Text Id="__SingleUse_689S" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">0</Translation>
-      </Text>
-      <Text Id="__SingleUse_YF8X" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">Code : &lt;value&gt; </Translation>
-      </Text>
-      <Text Id="__SingleUse_WUW0" Alignment="Left" TypographyId="Typography_00">
+      <Text Id="__SingleUse_ZOKE" Alignment="Left" TypographyId="Typography_01">
         <Translation Language="GB">JADIS</Translation>
       </Text>
     </TextGroup>
@@ -22,5 +16,6 @@
     <Typography Id="Large" Font="verdana.ttf" Size="40" Bpp="4" Direction="LTR" FallbackCharacter="?" />
     <Typography Id="Small" Font="verdana.ttf" Size="10" Bpp="4" Direction="LTR" FallbackCharacter="?" />
     <Typography Id="Typography_00" Font="verdanaz.ttf" Size="20" Bpp="4" Direction="LTR" FallbackCharacter="?" />
+    <Typography Id="Typography_01" Font="verdanai.ttf" Size="20" Bpp="4" Direction="LTR" FallbackCharacter="?" />
   </Typographies>
 </TextDatabase>

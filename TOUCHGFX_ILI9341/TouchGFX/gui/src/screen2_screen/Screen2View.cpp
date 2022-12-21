@@ -2,7 +2,6 @@
 #include <inttypes.h>
 
 extern uint16_t volume;
-extern int code2;
 
 Screen2View::Screen2View()
 {
@@ -25,6 +24,5 @@ void Screen2View::handleTickEvent()
 {
 	boxProgress1.setValue(volume);
 	circleProgress1.setValue(volume);
-	Unicode::snprintf(textArea1Buffer, TEXTAREA1_SIZE, "%u",code2);
-	textArea1.invalidate();
+
 }

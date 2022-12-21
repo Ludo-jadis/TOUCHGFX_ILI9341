@@ -53,4 +53,4 @@ touchgfx_ili9341/main.o: ..\Core\Src\main.c ..\Core\Inc\main.h \
   ..\Core\Inc\spi.h ..\Core\Inc\tim.h ..\Core\Inc\usart.h \
   ..\Core\Inc\usb_otg.h ..\Core\Inc\gpio.h \
   ..\TouchGFX\App\app_touchgfx.h ..\Core\Inc\core.h \
-  ..\Core\Inc\dwt_stm32_delay.h
+  ..\Core\Inc\dwt_stm32_delay.h ..\Core\Inc\IR_RC5.h

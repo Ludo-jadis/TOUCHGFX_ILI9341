@@ -4,7 +4,6 @@
 #include <gui_generated/screen2_screen/Screen2ViewBase.hpp>
 #include <touchgfx/Color.hpp>
 #include <BitmapDatabase.hpp>
-#include <texts/TextKeysAndLanguages.hpp>
 #include <touchgfx/canvas_widget_renderer/CanvasWidgetRenderer.hpp>
 
 
@@ -16,10 +15,10 @@ Screen2ViewBase::Screen2ViewBase()
     __background.setPosition(0, 0, 320, 240);
     __background.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
 
-    image2.setXY(0, 0);
-    image2.setBitmap(touchgfx::Bitmap(BITMAP_BLUE_BACKGROUNDS_MAIN_BG_320X240PX_ID));
+    image6.setXY(0, 0);
+    image6.setBitmap(touchgfx::Bitmap(BITMAP_GAL_GADOT_ID));
 
-    boxProgress1.setXY(68, 212);
+    boxProgress1.setXY(12, 8);
     boxProgress1.setProgressIndicatorPosition(12, 4, 180, 12);
     boxProgress1.setRange(0, 100);
     boxProgress1.setDirection(touchgfx::AbstractDirectionProgress::RIGHT);
@@ -27,7 +26,7 @@ Screen2ViewBase::Screen2ViewBase()
     boxProgress1.setColor(touchgfx::Color::getColorFromRGB(0, 151, 255));
     boxProgress1.setValue(0);
 
-    circleProgress1.setXY(16, 68);
+    circleProgress1.setXY(12, 28);
     circleProgress1.setProgressIndicatorPosition(0, 0, 104, 104);
     circleProgress1.setRange(0, 100);
     circleProgress1.setCenter(52, 52);
@@ -39,30 +38,10 @@ Screen2ViewBase::Screen2ViewBase()
     circleProgress1.setPainter(circleProgress1Painter);
     circleProgress1.setValue(0);
 
-    image1.setXY(274, 17);
-    image1.setBitmap(touchgfx::Bitmap(BITMAP_BLUE_ICONS_HOME_32_ID));
-
-    image4.setXY(160, 128);
-    image4.setBitmap(touchgfx::Bitmap(BITMAP_BLUE_CHECK_BUTTONS_CHECK_ROUND_MARK_PRESSED_ID));
-
-    image5.setXY(160, 68);
-    image5.setBitmap(touchgfx::Bitmap(BITMAP_DARK_RADIO_BUTTONS_RADIO_RE_BUTTON_ACTIVE_ID));
-
-    textArea1.setPosition(28, 22, 152, 24);
-    textArea1.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
-    textArea1.setLinespacing(0);
-    Unicode::snprintf(textArea1Buffer, TEXTAREA1_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_689S).getText());
-    textArea1.setWildcard(textArea1Buffer);
-    textArea1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_YF8X));
-
     add(__background);
-    add(image2);
+    add(image6);
     add(boxProgress1);
     add(circleProgress1);
-    add(image1);
-    add(image4);
-    add(image5);
-    add(textArea1);
 }
 
 void Screen2ViewBase::setupScreen()

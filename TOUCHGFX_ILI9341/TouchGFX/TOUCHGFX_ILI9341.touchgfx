@@ -5,54 +5,25 @@
         "Name": "Screen1",
         "Components": [
           {
-            "Type": "Box",
-            "Name": "box1",
-            "X": 1,
-            "Width": 104,
+            "Type": "Image",
+            "Name": "image1",
+            "Width": 320,
             "Height": 240,
-            "Color": {
-              "Red": 25,
-              "Green": 25,
-              "Blue": 230
-            }
-          },
-          {
-            "Type": "Box",
-            "Name": "box2",
-            "X": 216,
-            "Width": 105,
-            "Height": 240,
-            "Color": {
-              "Red": 235,
-              "Green": 52,
-              "Blue": 52
-            }
-          },
-          {
-            "Type": "Box",
-            "Name": "box3",
-            "X": 105,
-            "Width": 111,
-            "Height": 240,
-            "Color": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            }
+            "RelativeFilename": "gal gadot.png"
           },
           {
             "Type": "TextArea",
             "Name": "textArea1",
-            "X": 126,
-            "Y": 108,
-            "Width": 68,
+            "X": 38,
+            "Y": 36,
+            "Width": 60,
             "Height": 24,
-            "TextId": "__SingleUse_WUW0",
+            "TextId": "__SingleUse_ZOKE",
             "TextRotation": "0",
             "Color": {
-              "Red": 13,
-              "Green": 3,
-              "Blue": 148
+              "Red": 136,
+              "Green": 136,
+              "Blue": 235
             },
             "AutoSize": true
           }
@@ -79,16 +50,16 @@
         "Components": [
           {
             "Type": "Image",
-            "Name": "image2",
+            "Name": "image6",
             "Width": 320,
             "Height": 240,
-            "RelativeFilename": "__designer\\Blue_Backgrounds_Main_bg_320x240px.png"
+            "RelativeFilename": "gal gadot.png"
           },
           {
             "Type": "BoxProgress",
             "Name": "boxProgress1",
-            "X": 68,
-            "Y": 212,
+            "X": 12,
+            "Y": 8,
             "Width": 184,
             "Height": 20,
             "Color": {
@@ -106,8 +77,8 @@
           {
             "Type": "CircleProgress",
             "Name": "circleProgress1",
-            "X": 16,
-            "Y": 68,
+            "X": 12,
+            "Y": 28,
             "Width": 104,
             "Height": 104,
             "FileNameProgress": "__designer\\Blue_ProgressIndicators_fill_medium_circle_indicator_fill_full.png",
@@ -124,48 +95,6 @@
             "Style": "Style5",
             "FileNameBackground": "__designer\\Blue_ProgressIndicators_bg_medium_circle_indicator_bg_full.png",
             "ProgressRangeMax": 100
-          },
-          {
-            "Type": "Image",
-            "Name": "image1",
-            "X": 274,
-            "Y": 17,
-            "Width": 30,
-            "Height": 29,
-            "RelativeFilename": "__designer\\Blue_Icons_Home_32.png"
-          },
-          {
-            "Type": "Image",
-            "Name": "image4",
-            "X": 160,
-            "Y": 128,
-            "Width": 44,
-            "Height": 44,
-            "RelativeFilename": "__designer\\Blue_Check_buttons_Check_Round_mark_pressed.png"
-          },
-          {
-            "Type": "Image",
-            "Name": "image5",
-            "X": 160,
-            "Y": 68,
-            "Width": 44,
-            "Height": 44,
-            "RelativeFilename": "__designer\\Dark_Radio_buttons_Radio_RE_button_active.png"
-          },
-          {
-            "Type": "TextArea",
-            "Name": "textArea1",
-            "X": 28,
-            "Y": 22,
-            "Width": 152,
-            "Height": 24,
-            "TextId": "__SingleUse_YF8X",
-            "TextRotation": "0",
-            "Wildcard1": {
-              "TextId": "__SingleUse_689S",
-              "UseBuffer": true,
-              "BufferSize": 16
-            }
           }
         ],
         "Interactions": []

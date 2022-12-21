@@ -200,11 +200,11 @@ touchgfx_ili9341/touchgfxconfiguration.o: \
   ..\touchgfx\gui\include\gui\screen1_screen\Screen1Presenter.hpp \
   ..\touchgfx\gui\include\gui\model\ModelListener.hpp \
   ..\middlewares\st\touchgfx\framework\include\touchgfx\widgets\Box.hpp \
+  ..\middlewares\st\touchgfx\framework\include\touchgfx\widgets\Image.hpp \
   ..\middlewares\st\touchgfx\framework\include\touchgfx\widgets\TextArea.hpp \
   ..\touchgfx\gui\include\gui\screen2_screen\Screen2View.hpp \
   ..\touchgfx\generated\gui_generated\include\gui_generated\screen2_screen\Screen2ViewBase.hpp \
   ..\touchgfx\gui\include\gui\screen2_screen\Screen2Presenter.hpp \
-  ..\middlewares\st\touchgfx\framework\include\touchgfx\widgets\Image.hpp \
   ..\middlewares\st\touchgfx\framework\include\touchgfx\containers\progress_indicators\BoxProgress.hpp \
   ..\middlewares\st\touchgfx\framework\include\touchgfx\containers\progress_indicators\AbstractDirectionProgress.hpp \
   ..\middlewares\st\touchgfx\framework\include\touchgfx\containers\progress_indicators\AbstractProgressIndicator.hpp \
@@ -224,7 +224,6 @@ touchgfx_ili9341/touchgfxconfiguration.o: \
   ..\middlewares\st\touchgfx\framework\include\touchgfx\widgets\canvas\PainterRGB565Bitmap.hpp \
   ..\middlewares\st\touchgfx\framework\include\touchgfx\widgets\canvas\AbstractPainterBitmap.hpp \
   ..\middlewares\st\touchgfx\framework\include\touchgfx\widgets\canvas\AbstractPainterRGB565.hpp \
-  ..\middlewares\st\touchgfx\framework\include\touchgfx\widgets\TextAreaWithWildcard.hpp \
   ..\touchgfx\generated\images\include\BitmapDatabase.hpp \
   ..\middlewares\st\touchgfx\framework\include\platform\driver\lcd\LCD16bpp.hpp \
   ..\middlewares\st\touchgfx\framework\include\touchgfx\lcd\LCD16DebugPrinter.hpp \

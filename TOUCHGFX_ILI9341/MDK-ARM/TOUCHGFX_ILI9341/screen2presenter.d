@@ -207,8 +207,4 @@ touchgfx_ili9341/screen2presenter.o: \
   ..\middlewares\st\touchgfx\framework\include\touchgfx\widgets\canvas\CanvasWidget.hpp \
   ..\middlewares\st\touchgfx\framework\include\touchgfx\widgets\canvas\PainterRGB565Bitmap.hpp \
   ..\middlewares\st\touchgfx\framework\include\touchgfx\widgets\canvas\AbstractPainterBitmap.hpp \
-  ..\middlewares\st\touchgfx\framework\include\touchgfx\widgets\canvas\AbstractPainterRGB565.hpp \
-  ..\middlewares\st\touchgfx\framework\include\touchgfx\widgets\TextAreaWithWildcard.hpp \
-  ..\middlewares\st\touchgfx\framework\include\touchgfx\widgets\TextArea.hpp \
-  ..\middlewares\st\touchgfx\framework\include\touchgfx\TypedText.hpp \
-  ..\middlewares\st\touchgfx\framework\include\touchgfx\Texts.hpp
+  ..\middlewares\st\touchgfx\framework\include\touchgfx\widgets\canvas\AbstractPainterRGB565.hpp
