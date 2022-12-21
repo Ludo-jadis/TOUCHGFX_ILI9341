@@ -187,11 +187,11 @@ touchgfx_ili9341/screen2view.o: \
   ..\touchgfx\gui\include\gui\model\ModelListener.hpp \
   ..\middlewares\st\touchgfx\framework\include\touchgfx\widgets\Box.hpp \
   ..\middlewares\st\touchgfx\framework\include\touchgfx\widgets\Widget.hpp \
+  ..\middlewares\st\touchgfx\framework\include\touchgfx\widgets\Image.hpp \
   ..\middlewares\st\touchgfx\framework\include\touchgfx\containers\progress_indicators\BoxProgress.hpp \
   ..\middlewares\st\touchgfx\framework\include\touchgfx\containers\progress_indicators\AbstractDirectionProgress.hpp \
   ..\middlewares\st\touchgfx\framework\include\touchgfx\containers\progress_indicators\AbstractProgressIndicator.hpp \
   ..\middlewares\st\touchgfx\framework\include\touchgfx\EasingEquations.hpp \
-  ..\middlewares\st\touchgfx\framework\include\touchgfx\widgets\Image.hpp \
   ..\middlewares\st\touchgfx\framework\include\touchgfx\containers\progress_indicators\CircleProgress.hpp \
   ..\middlewares\st\touchgfx\framework\include\touchgfx\widgets\canvas\AbstractPainter.hpp \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\string.h \
@@ -207,4 +207,10 @@ touchgfx_ili9341/screen2view.o: \
   ..\middlewares\st\touchgfx\framework\include\touchgfx\widgets\canvas\CanvasWidget.hpp \
   ..\middlewares\st\touchgfx\framework\include\touchgfx\widgets\canvas\PainterRGB565Bitmap.hpp \
   ..\middlewares\st\touchgfx\framework\include\touchgfx\widgets\canvas\AbstractPainterBitmap.hpp \
-  ..\middlewares\st\touchgfx\framework\include\touchgfx\widgets\canvas\AbstractPainterRGB565.hpp
+  ..\middlewares\st\touchgfx\framework\include\touchgfx\widgets\canvas\AbstractPainterRGB565.hpp \
+  ..\middlewares\st\touchgfx\framework\include\touchgfx\widgets\TextAreaWithWildcard.hpp \
+  ..\middlewares\st\touchgfx\framework\include\touchgfx\widgets\TextArea.hpp \
+  ..\middlewares\st\touchgfx\framework\include\touchgfx\TypedText.hpp \
+  ..\middlewares\st\touchgfx\framework\include\touchgfx\Texts.hpp \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\inttypes.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\inttypes.h

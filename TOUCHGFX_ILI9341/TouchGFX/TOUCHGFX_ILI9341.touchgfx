@@ -78,21 +78,17 @@
         "CanvasBufferSize": 4800,
         "Components": [
           {
-            "Type": "Box",
-            "Name": "box1",
+            "Type": "Image",
+            "Name": "image2",
             "Width": 320,
             "Height": 240,
-            "Color": {
-              "Red": 216,
-              "Green": 220,
-              "Blue": 232
-            }
+            "RelativeFilename": "__designer\\Blue_Backgrounds_Main_bg_320x240px.png"
           },
           {
             "Type": "BoxProgress",
             "Name": "boxProgress1",
             "X": 68,
-            "Y": 211,
+            "Y": 212,
             "Width": 184,
             "Height": 20,
             "Color": {
@@ -100,26 +96,17 @@
               "Blue": 255
             },
             "Direction": "Right",
-            "Style": "Style3",
-            "FileNameBackground": "__designer\\Blue_ProgressIndicators_bg_medium_progress_indicator_bg_square_0_degrees.png",
-            "IndicatorPositionX": 2,
-            "IndicatorPositionY": 2,
+            "FileNameBackground": "__designer\\Blue_ProgressIndicators_bg_medium_progress_indicator_bg_round_0_degrees.png",
+            "IndicatorPositionX": 12,
+            "IndicatorPositionY": 4,
             "IndicatorPositionWidth": 180,
-            "IndicatorPositionHeight": 16,
-            "ProgressRangeMax": 100,
-            "ProgressInitialValue": 60
-          },
-          {
-            "Type": "Container",
-            "Name": "container1",
-            "Width": 320,
-            "Height": 240,
-            "Components": []
+            "IndicatorPositionHeight": 12,
+            "ProgressRangeMax": 100
           },
           {
             "Type": "CircleProgress",
             "Name": "circleProgress1",
-            "X": 22,
+            "X": 16,
             "Y": 68,
             "Width": 104,
             "Height": 104,
@@ -136,8 +123,49 @@
             "CapPrecision": "Butt",
             "Style": "Style5",
             "FileNameBackground": "__designer\\Blue_ProgressIndicators_bg_medium_circle_indicator_bg_full.png",
-            "ProgressRangeMax": 100,
-            "ProgressInitialValue": 60
+            "ProgressRangeMax": 100
+          },
+          {
+            "Type": "Image",
+            "Name": "image1",
+            "X": 274,
+            "Y": 17,
+            "Width": 30,
+            "Height": 29,
+            "RelativeFilename": "__designer\\Blue_Icons_Home_32.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "image4",
+            "X": 160,
+            "Y": 128,
+            "Width": 44,
+            "Height": 44,
+            "RelativeFilename": "__designer\\Blue_Check_buttons_Check_Round_mark_pressed.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "image5",
+            "X": 160,
+            "Y": 68,
+            "Width": 44,
+            "Height": 44,
+            "RelativeFilename": "__designer\\Dark_Radio_buttons_Radio_RE_button_active.png"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea1",
+            "X": 28,
+            "Y": 22,
+            "Width": 152,
+            "Height": 24,
+            "TextId": "__SingleUse_YF8X",
+            "TextRotation": "0",
+            "Wildcard1": {
+              "TextId": "__SingleUse_689S",
+              "UseBuffer": true,
+              "BufferSize": 16
+            }
           }
         ],
         "Interactions": []

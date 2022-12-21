@@ -203,10 +203,10 @@ touchgfx_ili9341/touchgfxgeneratedhal.o: \
   ..\touchgfx\gui\include\gui\screen2_screen\Screen2View.hpp \
   ..\touchgfx\generated\gui_generated\include\gui_generated\screen2_screen\Screen2ViewBase.hpp \
   ..\touchgfx\gui\include\gui\screen2_screen\Screen2Presenter.hpp \
+  ..\middlewares\st\touchgfx\framework\include\touchgfx\widgets\Image.hpp \
   ..\middlewares\st\touchgfx\framework\include\touchgfx\containers\progress_indicators\BoxProgress.hpp \
   ..\middlewares\st\touchgfx\framework\include\touchgfx\containers\progress_indicators\AbstractDirectionProgress.hpp \
   ..\middlewares\st\touchgfx\framework\include\touchgfx\containers\progress_indicators\AbstractProgressIndicator.hpp \
-  ..\middlewares\st\touchgfx\framework\include\touchgfx\widgets\Image.hpp \
   ..\middlewares\st\touchgfx\framework\include\touchgfx\containers\progress_indicators\CircleProgress.hpp \
   ..\middlewares\st\touchgfx\framework\include\touchgfx\widgets\canvas\AbstractPainter.hpp \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\string.h \
@@ -223,6 +223,7 @@ touchgfx_ili9341/touchgfxgeneratedhal.o: \
   ..\middlewares\st\touchgfx\framework\include\touchgfx\widgets\canvas\PainterRGB565Bitmap.hpp \
   ..\middlewares\st\touchgfx\framework\include\touchgfx\widgets\canvas\AbstractPainterBitmap.hpp \
   ..\middlewares\st\touchgfx\framework\include\touchgfx\widgets\canvas\AbstractPainterRGB565.hpp \
+  ..\middlewares\st\touchgfx\framework\include\touchgfx\widgets\TextAreaWithWildcard.hpp \
   ..\middlewares\st\touchgfx\framework\include\touchgfx\hal\PaintRGB565Impl.hpp \
   ..\middlewares\st\touchgfx\framework\include\touchgfx\hal\Paint.hpp \
   ..\middlewares\st\touchgfx\framework\include\touchgfx\Color.hpp \

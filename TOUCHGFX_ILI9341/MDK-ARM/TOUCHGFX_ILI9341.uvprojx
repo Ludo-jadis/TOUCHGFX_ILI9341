@@ -406,6 +406,16 @@
               <FilePath>..\Core\Src\core.c</FilePath>
             </File>
             <File>
+              <FileName>dwt_stm32_delay.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Core\Src\dwt_stm32_delay.c</FilePath>
+            </File>
+            <File>
+              <FileName>dwt_stm32_delay.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Core\Inc\dwt_stm32_delay.h</FilePath>
+            </File>
+            <File>
               <FileName>main.c</FileName>
               <FileType>1</FileType>
               <FilePath>../Core/Src/main.c</FilePath>
@@ -791,19 +801,39 @@
               <FilePath>../touchgfx/generated/fonts/src/generatedfont.cpp</FilePath>
             </File>
             <File>
+              <FileName>image_Blue_Backgrounds_Main_bg_320x240px.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../touchgfx/generated/images/src/__designer/image_blue_backgrounds_main_bg_320x240px.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>image_Blue_Check_buttons_Check_Round_mark_pressed.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../touchgfx/generated/images/src/__designer/image_blue_check_buttons_check_round_mark_pressed.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>image_Blue_Icons_Home_32.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../touchgfx/generated/images/src/__designer/image_blue_icons_home_32.cpp</FilePath>
+            </File>
+            <File>
               <FileName>image_Blue_ProgressIndicators_bg_medium_circle_indicator_bg_full.cpp</FileName>
               <FileType>8</FileType>
               <FilePath>../touchgfx/generated/images/src/__designer/image_blue_progressindicators_bg_medium_circle_indicator_bg_full.cpp</FilePath>
             </File>
             <File>
-              <FileName>image_Blue_ProgressIndicators_bg_medium_progress_indicator_bg_square_0_degrees.cpp</FileName>
+              <FileName>image_Blue_ProgressIndicators_bg_medium_progress_indicator_bg_round_0_degrees.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>../touchgfx/generated/images/src/__designer/image_blue_progressindicators_bg_medium_progress_indicator_bg_square_0_degrees.cpp</FilePath>
+              <FilePath>../touchgfx/generated/images/src/__designer/image_blue_progressindicators_bg_medium_progress_indicator_bg_round_0_degrees.cpp</FilePath>
             </File>
             <File>
               <FileName>image_Blue_ProgressIndicators_fill_medium_circle_indicator_fill_full.cpp</FileName>
               <FileType>8</FileType>
               <FilePath>../touchgfx/generated/images/src/__designer/image_blue_progressindicators_fill_medium_circle_indicator_fill_full.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>image_Dark_Radio_buttons_Radio_RE_button_active.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../touchgfx/generated/images/src/__designer/image_dark_radio_buttons_radio_re_button_active.cpp</FilePath>
             </File>
             <File>
               <FileName>Kerning_verdana_10_4bpp.cpp</FileName>
