@@ -10,6 +10,7 @@
  
  	uint16_t code ;
 	uint16_t volume = 0;
+	uint16_t old_volume = 0;
 	int i = 0;
 	uint32_t clk_cycle_start = 0 ;
 	int detection =0;
@@ -33,6 +34,7 @@ uint16_t Decode_RC5(void)
 		if ( (i == 14) || cycle_micro > 10821920)
 		{
 			i = 0;
+			old_volume = volume;
 			if( code == 0x2FBC || code == 0x0FBC)
 				{
 					volume++;
@@ -45,13 +47,6 @@ uint16_t Decode_RC5(void)
 			{
 				code &= ~(1UL << (15-i2));
 			}
-			if (volume > 100 )
-				{
-					volume = 100;
-				}else if(volume < 0)
-					{
-						volume = 0;
-					}
 		}
 		
 		if ( cycle_micro > microseconds)
@@ -75,6 +70,14 @@ uint16_t Decode_RC5(void)
 		detection = 1;
 		clk_cycle_start = DWT->CYCCNT;
 	}
+	if (volume > 100 )
+	{
+		volume = 100;
+	}
+	if((volume < 0) || ((volume - old_volume)> 5) )
+		{
+			volume = 0;
+		}
 return volume;
 }
 

@@ -3,7 +3,7 @@
 <title>Static Call Graph - [TOUCHGFX_ILI9341\TOUCHGFX_ILI9341.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image TOUCHGFX_ILI9341\TOUCHGFX_ILI9341.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 6190004: Last Updated: Wed Dec 21 17:40:39 2022
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 6190004: Last Updated: Wed Dec 21 17:59:03 2022
 <BR><P>
 <H3>Maximum Stack Usage =        976 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -1998,7 +1998,7 @@ Global Symbols
 <P><STRONG><a name="[7]"></a>DebugMon_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f7xx_it.o(.text.DebugMon_Handler))
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f767xx.o(RESET)
 </UL>
-<P><STRONG><a name="[287]"></a>Decode_RC5</STRONG> (Thumb, 260 bytes, Stack size 24 bytes, ir_rc5.o(.text.Decode_RC5))
+<P><STRONG><a name="[287]"></a>Decode_RC5</STRONG> (Thumb, 296 bytes, Stack size 24 bytes, ir_rc5.o(.text.Decode_RC5))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = Decode_RC5
 </UL>
 <BR>[Calls]<UL><LI><a href="#[288]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_ReadPin
@@ -3599,8 +3599,8 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[14e]"></a>touchgfx::CanvasWidget::setAlpha(unsigned char)</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, circle.o(.text._ZN8touchgfx12CanvasWidget8setAlphaEh))
-<BR>[Address Reference Count : 2]<UL><LI> circle.o(.rodata._ZTVN8touchgfx6CircleE)
-<LI> canvaswidget.o(.rodata._ZTVN8touchgfx12CanvasWidgetE)
+<BR>[Address Reference Count : 2]<UL><LI> canvaswidget.o(.rodata._ZTVN8touchgfx12CanvasWidgetE)
+<LI> circle.o(.rodata._ZTVN8touchgfx6CircleE)
 </UL>
 <P><STRONG><a name="[360]"></a>touchgfx::CanvasWidget::CanvasWidget__sub_object()</STRONG> (Thumb, 36 bytes, Stack size 8 bytes, canvaswidget.o(.text._ZN8touchgfx12CanvasWidgetC2Ev), UNUSED)
 <BR><BR>[Calls]<UL><LI><a href="#[2a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
@@ -4790,9 +4790,9 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 128 + Unknown Stack Size
 <LI>Call Chain = touchgfx::HAL::blitCopyWord(unsigned short const*, unsigned short, unsigned short, unsigned short, unsigned short, unsigned short, unsigned short) &rArr; __aeabi_assert &rArr; abort &rArr; __rt_SIGABRT &rArr; __rt_SIGABRT_inner &rArr; __default_signal_display &rArr; _ttywrch
 </UL>
-<BR>[Calls]<UL><LI><a href="#[3ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OUTLINED_FUNCTION_2
-<LI><a href="#[3ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OUTLINED_FUNCTION_6
+<BR>[Calls]<UL><LI><a href="#[3ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OUTLINED_FUNCTION_6
 <LI><a href="#[2ec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OUTLINED_FUNCTION_4
+<LI><a href="#[3ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OUTLINED_FUNCTION_2
 <LI><a href="#[26a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> touchgfxhal.o(.rodata._ZTV11TouchGFXHAL)
@@ -4801,9 +4801,9 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 128 + Unknown Stack Size
 <LI>Call Chain = touchgfx::HAL::blitFillWord(unsigned short, unsigned short, unsigned short, unsigned short, unsigned short, unsigned short) &rArr; __aeabi_assert &rArr; abort &rArr; __rt_SIGABRT &rArr; __rt_SIGABRT_inner &rArr; __default_signal_display &rArr; _ttywrch
 </UL>
-<BR>[Calls]<UL><LI><a href="#[3ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OUTLINED_FUNCTION_2
-<LI><a href="#[3ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OUTLINED_FUNCTION_6
+<BR>[Calls]<UL><LI><a href="#[3ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OUTLINED_FUNCTION_6
 <LI><a href="#[2ec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OUTLINED_FUNCTION_4
+<LI><a href="#[3ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OUTLINED_FUNCTION_2
 <LI><a href="#[26a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> touchgfxhal.o(.rodata._ZTV11TouchGFXHAL)
@@ -4812,10 +4812,10 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 176 + Unknown Stack Size
 <LI>Call Chain = touchgfx::HAL::blitCopyGlyph(unsigned char const*, unsigned short, unsigned short, unsigned short, unsigned short, unsigned short, touchgfx::colortype, unsigned char, touchgfx::BlitOperations, bool) &rArr; touchgfx::HAL::getDstAddress(unsigned short, unsigned short, unsigned short*) const &rArr; touchgfx::HAL::getDstAddress(unsigned short, unsigned short, unsigned short*, unsigned short, touchgfx::Bitmap::BitmapFormat) const &rArr; touchgfx::HAL::getBitDepth(touchgfx::Bitmap::BitmapFormat) const &rArr; __aeabi_assert &rArr; abort &rArr; __rt_SIGABRT &rArr; __rt_SIGABRT_inner &rArr; __default_signal_display &rArr; _ttywrch
 </UL>
-<BR>[Calls]<UL><LI><a href="#[3ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OUTLINED_FUNCTION_2
-<LI><a href="#[2d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OUTLINED_FUNCTION_0
+<BR>[Calls]<UL><LI><a href="#[2d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OUTLINED_FUNCTION_0
 <LI><a href="#[3ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;touchgfx::HAL::getDstAddress(unsigned short, unsigned short, unsigned short*) const
 <LI><a href="#[2ec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OUTLINED_FUNCTION_4
+<LI><a href="#[3ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OUTLINED_FUNCTION_2
 <LI><a href="#[26a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> touchgfxhal.o(.rodata._ZTV11TouchGFXHAL)
@@ -5035,10 +5035,10 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 160 + Unknown Stack Size
 <LI>Call Chain = touchgfx::HAL::blitCopy(unsigned short const*, unsigned char const*, unsigned short, unsigned short, unsigned short, unsigned short, unsigned short, unsigned char, bool, unsigned short, touchgfx::Bitmap::BitmapFormat, touchgfx::Bitmap::BitmapFormat, bool) &rArr; touchgfx::HAL::getDstAddress(unsigned short, unsigned short, unsigned short*, unsigned short, touchgfx::Bitmap::BitmapFormat) const &rArr; touchgfx::HAL::getBitDepth(touchgfx::Bitmap::BitmapFormat) const &rArr; __aeabi_assert &rArr; abort &rArr; __rt_SIGABRT &rArr; __rt_SIGABRT_inner &rArr; __default_signal_display &rArr; _ttywrch
 </UL>
-<BR>[Calls]<UL><LI><a href="#[3ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OUTLINED_FUNCTION_2
-<LI><a href="#[3be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;touchgfx::HAL::getDstAddress(unsigned short, unsigned short, unsigned short*, unsigned short, touchgfx::Bitmap::BitmapFormat) const
+<BR>[Calls]<UL><LI><a href="#[3be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;touchgfx::HAL::getDstAddress(unsigned short, unsigned short, unsigned short*, unsigned short, touchgfx::Bitmap::BitmapFormat) const
 <LI><a href="#[3ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OUTLINED_FUNCTION_6
 <LI><a href="#[2ec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OUTLINED_FUNCTION_4
+<LI><a href="#[3ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OUTLINED_FUNCTION_2
 <LI><a href="#[26a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> touchgfxhal.o(.rodata._ZTV11TouchGFXHAL)
@@ -5066,10 +5066,10 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 160 + Unknown Stack Size
 <LI>Call Chain = touchgfx::HAL::blitFill(touchgfx::colortype, unsigned short, unsigned short, unsigned short, unsigned short, unsigned char, unsigned short, touchgfx::Bitmap::BitmapFormat, bool) &rArr; touchgfx::HAL::getDstAddress(unsigned short, unsigned short, unsigned short*, unsigned short, touchgfx::Bitmap::BitmapFormat) const &rArr; touchgfx::HAL::getBitDepth(touchgfx::Bitmap::BitmapFormat) const &rArr; __aeabi_assert &rArr; abort &rArr; __rt_SIGABRT &rArr; __rt_SIGABRT_inner &rArr; __default_signal_display &rArr; _ttywrch
 </UL>
-<BR>[Calls]<UL><LI><a href="#[3ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OUTLINED_FUNCTION_2
-<LI><a href="#[3be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;touchgfx::HAL::getDstAddress(unsigned short, unsigned short, unsigned short*, unsigned short, touchgfx::Bitmap::BitmapFormat) const
+<BR>[Calls]<UL><LI><a href="#[3be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;touchgfx::HAL::getDstAddress(unsigned short, unsigned short, unsigned short*, unsigned short, touchgfx::Bitmap::BitmapFormat) const
 <LI><a href="#[2ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;touchgfx::HAL::getClientFrameBuffer()
 <LI><a href="#[3ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OUTLINED_FUNCTION_6
+<LI><a href="#[3ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OUTLINED_FUNCTION_2
 <LI><a href="#[26a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> touchgfxhal.o(.rodata._ZTV11TouchGFXHAL)
@@ -5784,8 +5784,8 @@ Global Symbols
 <LI> image.o(.rodata._ZTVN8touchgfx5ImageE)
 <LI> snapshotwidget.o(.rodata._ZTVN8touchgfx14SnapshotWidgetE)
 <LI> textarea.o(.rodata._ZTVN8touchgfx8TextAreaE)
-<LI> circle.o(.rodata._ZTVN8touchgfx6CircleE)
 <LI> canvaswidget.o(.rodata._ZTVN8touchgfx12CanvasWidgetE)
+<LI> circle.o(.rodata._ZTVN8touchgfx6CircleE)
 </UL>
 <P><STRONG><a name="[3ec]"></a>touchgfx::muldiv(int, int, int, int&)</STRONG> (Thumb, 72 bytes, Stack size 24 bytes, utils.o(.text._ZN8touchgfx6muldivEiiiRi))
 <BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = touchgfx::muldiv(int, int, int, int&) &rArr; touchgfx::muldivu(unsigned int, unsigned int, unsigned int, unsigned int&) &rArr;  touchgfx::muldivu(unsigned int, unsigned int, unsigned int, unsigned int&) (Cycle)
@@ -6029,8 +6029,8 @@ Global Symbols
 <LI> image.o(.rodata._ZTVN8touchgfx5ImageE)
 <LI> snapshotwidget.o(.rodata._ZTVN8touchgfx14SnapshotWidgetE)
 <LI> textarea.o(.rodata._ZTVN8touchgfx8TextAreaE)
-<LI> circle.o(.rodata._ZTVN8touchgfx6CircleE)
 <LI> canvaswidget.o(.rodata._ZTVN8touchgfx12CanvasWidgetE)
+<LI> circle.o(.rodata._ZTVN8touchgfx6CircleE)
 </UL>
 <P><STRONG><a name="[3e6]"></a>touchgfx::Drawable::getCachedAbsX()</STRONG> (Thumb, 38 bytes, Stack size 16 bytes, screen.o(.text._ZN8touchgfx8Drawable13getCachedAbsXEv))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = touchgfx::Drawable::getCachedAbsX() &rArr; touchgfx::Drawable::getAbsoluteRect() const
@@ -6053,8 +6053,8 @@ Global Symbols
 <LI> image.o(.rodata._ZTVN8touchgfx5ImageE)
 <LI> snapshotwidget.o(.rodata._ZTVN8touchgfx14SnapshotWidgetE)
 <LI> textarea.o(.rodata._ZTVN8touchgfx8TextAreaE)
-<LI> circle.o(.rodata._ZTVN8touchgfx6CircleE)
 <LI> canvaswidget.o(.rodata._ZTVN8touchgfx12CanvasWidgetE)
+<LI> circle.o(.rodata._ZTVN8touchgfx6CircleE)
 </UL>
 <P><STRONG><a name="[3d4]"></a>touchgfx::Drawable::setWidthHeight(touchgfx::Bitmap const&)</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, image.o(.text._ZN8touchgfx8Drawable14setWidthHeightERKNS_6BitmapE))
 <BR><BR>[Stack]<UL><LI>Max Depth = 80 + Unknown Stack Size
@@ -6085,8 +6085,8 @@ Global Symbols
 <LI> image.o(.rodata._ZTVN8touchgfx5ImageE)
 <LI> snapshotwidget.o(.rodata._ZTVN8touchgfx14SnapshotWidgetE)
 <LI> textarea.o(.rodata._ZTVN8touchgfx8TextAreaE)
-<LI> circle.o(.rodata._ZTVN8touchgfx6CircleE)
 <LI> canvaswidget.o(.rodata._ZTVN8touchgfx12CanvasWidgetE)
+<LI> circle.o(.rodata._ZTVN8touchgfx6CircleE)
 </UL>
 <P><STRONG><a name="[120]"></a>touchgfx::Drawable::handleDragEvent(touchgfx::DragEvent const&)</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, customcontainer1.o(.text._ZN8touchgfx8Drawable15handleDragEventERKNS_9DragEventE))
 <BR>[Address Reference Count : 11]<UL><LI> box.o(.rodata._ZTVN8touchgfx3BoxE)
@@ -6098,8 +6098,8 @@ Global Symbols
 <LI> image.o(.rodata._ZTVN8touchgfx5ImageE)
 <LI> snapshotwidget.o(.rodata._ZTVN8touchgfx14SnapshotWidgetE)
 <LI> textarea.o(.rodata._ZTVN8touchgfx8TextAreaE)
-<LI> circle.o(.rodata._ZTVN8touchgfx6CircleE)
 <LI> canvaswidget.o(.rodata._ZTVN8touchgfx12CanvasWidgetE)
+<LI> circle.o(.rodata._ZTVN8touchgfx6CircleE)
 </UL>
 <P><STRONG><a name="[14c]"></a>touchgfx::Drawable::handleTickEvent()</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, customcontainer1.o(.text._ZN8touchgfx8Drawable15handleTickEventEv))
 <BR>[Address Reference Count : 7]<UL><LI> box.o(.rodata._ZTVN8touchgfx3BoxE)
@@ -6107,8 +6107,8 @@ Global Symbols
 <LI> image.o(.rodata._ZTVN8touchgfx5ImageE)
 <LI> snapshotwidget.o(.rodata._ZTVN8touchgfx14SnapshotWidgetE)
 <LI> textarea.o(.rodata._ZTVN8touchgfx8TextAreaE)
-<LI> circle.o(.rodata._ZTVN8touchgfx6CircleE)
 <LI> canvaswidget.o(.rodata._ZTVN8touchgfx12CanvasWidgetE)
+<LI> circle.o(.rodata._ZTVN8touchgfx6CircleE)
 </UL>
 <P><STRONG><a name="[11e]"></a>touchgfx::Drawable::handleClickEvent(touchgfx::ClickEvent const&)</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, customcontainer1.o(.text._ZN8touchgfx8Drawable16handleClickEventERKNS_10ClickEventE))
 <BR>[Address Reference Count : 11]<UL><LI> box.o(.rodata._ZTVN8touchgfx3BoxE)
@@ -6120,8 +6120,8 @@ Global Symbols
 <LI> image.o(.rodata._ZTVN8touchgfx5ImageE)
 <LI> snapshotwidget.o(.rodata._ZTVN8touchgfx14SnapshotWidgetE)
 <LI> textarea.o(.rodata._ZTVN8touchgfx8TextAreaE)
-<LI> circle.o(.rodata._ZTVN8touchgfx6CircleE)
 <LI> canvaswidget.o(.rodata._ZTVN8touchgfx12CanvasWidgetE)
+<LI> circle.o(.rodata._ZTVN8touchgfx6CircleE)
 </UL>
 <P><STRONG><a name="[11f]"></a>touchgfx::Drawable::handleGestureEvent(touchgfx::GestureEvent const&)</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, customcontainer1.o(.text._ZN8touchgfx8Drawable18handleGestureEventERKNS_12GestureEventE))
 <BR>[Address Reference Count : 11]<UL><LI> box.o(.rodata._ZTVN8touchgfx3BoxE)
@@ -6133,8 +6133,8 @@ Global Symbols
 <LI> image.o(.rodata._ZTVN8touchgfx5ImageE)
 <LI> snapshotwidget.o(.rodata._ZTVN8touchgfx14SnapshotWidgetE)
 <LI> textarea.o(.rodata._ZTVN8touchgfx8TextAreaE)
-<LI> circle.o(.rodata._ZTVN8touchgfx6CircleE)
 <LI> canvaswidget.o(.rodata._ZTVN8touchgfx12CanvasWidgetE)
+<LI> circle.o(.rodata._ZTVN8touchgfx6CircleE)
 </UL>
 <P><STRONG><a name="[11d]"></a>touchgfx::Drawable::childGeometryChanged()</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, customcontainer1.o(.text._ZN8touchgfx8Drawable20childGeometryChangedEv))
 <BR>[Address Reference Count : 11]<UL><LI> box.o(.rodata._ZTVN8touchgfx3BoxE)
@@ -6146,8 +6146,8 @@ Global Symbols
 <LI> image.o(.rodata._ZTVN8touchgfx5ImageE)
 <LI> snapshotwidget.o(.rodata._ZTVN8touchgfx14SnapshotWidgetE)
 <LI> textarea.o(.rodata._ZTVN8touchgfx8TextAreaE)
-<LI> circle.o(.rodata._ZTVN8touchgfx6CircleE)
 <LI> canvaswidget.o(.rodata._ZTVN8touchgfx12CanvasWidgetE)
+<LI> circle.o(.rodata._ZTVN8touchgfx6CircleE)
 </UL>
 <P><STRONG><a name="[3e5]"></a>touchgfx::Drawable::getCachedVisibleRect()</STRONG> (Thumb, 48 bytes, Stack size 24 bytes, screen.o(.text._ZN8touchgfx8Drawable20getCachedVisibleRectEv))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = touchgfx::Drawable::getCachedVisibleRect()
@@ -6167,8 +6167,8 @@ Global Symbols
 <LI> image.o(.rodata._ZTVN8touchgfx5ImageE)
 <LI> snapshotwidget.o(.rodata._ZTVN8touchgfx14SnapshotWidgetE)
 <LI> textarea.o(.rodata._ZTVN8touchgfx8TextAreaE)
-<LI> circle.o(.rodata._ZTVN8touchgfx6CircleE)
 <LI> canvaswidget.o(.rodata._ZTVN8touchgfx12CanvasWidgetE)
+<LI> circle.o(.rodata._ZTVN8touchgfx6CircleE)
 </UL>
 <P><STRONG><a name="[119]"></a>touchgfx::Drawable::setX(short)</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, customcontainer1.o(.text._ZN8touchgfx8Drawable4setXEs))
 <BR>[Address Reference Count : 11]<UL><LI> box.o(.rodata._ZTVN8touchgfx3BoxE)
@@ -6180,8 +6180,8 @@ Global Symbols
 <LI> image.o(.rodata._ZTVN8touchgfx5ImageE)
 <LI> snapshotwidget.o(.rodata._ZTVN8touchgfx14SnapshotWidgetE)
 <LI> textarea.o(.rodata._ZTVN8touchgfx8TextAreaE)
-<LI> circle.o(.rodata._ZTVN8touchgfx6CircleE)
 <LI> canvaswidget.o(.rodata._ZTVN8touchgfx12CanvasWidgetE)
+<LI> circle.o(.rodata._ZTVN8touchgfx6CircleE)
 </UL>
 <P><STRONG><a name="[11a]"></a>touchgfx::Drawable::setY(short)</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, customcontainer1.o(.text._ZN8touchgfx8Drawable4setYEs))
 <BR>[Address Reference Count : 11]<UL><LI> box.o(.rodata._ZTVN8touchgfx3BoxE)
@@ -6193,8 +6193,8 @@ Global Symbols
 <LI> image.o(.rodata._ZTVN8touchgfx5ImageE)
 <LI> snapshotwidget.o(.rodata._ZTVN8touchgfx14SnapshotWidgetE)
 <LI> textarea.o(.rodata._ZTVN8touchgfx8TextAreaE)
-<LI> circle.o(.rodata._ZTVN8touchgfx6CircleE)
 <LI> canvaswidget.o(.rodata._ZTVN8touchgfx12CanvasWidgetE)
+<LI> circle.o(.rodata._ZTVN8touchgfx6CircleE)
 </UL>
 <P><STRONG><a name="[3aa]"></a>touchgfx::Drawable::setXY(short, short)</STRONG> (Thumb, 28 bytes, Stack size 16 bytes, abstractprogressindicator.o(.text._ZN8touchgfx8Drawable5setXYEss))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = touchgfx::Drawable::setXY(short, short)
@@ -6217,8 +6217,8 @@ Global Symbols
 <LI> image.o(.rodata._ZTVN8touchgfx5ImageE)
 <LI> snapshotwidget.o(.rodata._ZTVN8touchgfx14SnapshotWidgetE)
 <LI> textarea.o(.rodata._ZTVN8touchgfx8TextAreaE)
-<LI> circle.o(.rodata._ZTVN8touchgfx6CircleE)
 <LI> canvaswidget.o(.rodata._ZTVN8touchgfx12CanvasWidgetE)
+<LI> circle.o(.rodata._ZTVN8touchgfx6CircleE)
 </UL>
 <P><STRONG><a name="[11b]"></a>touchgfx::Drawable::setWidth(short)</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, customcontainer1.o(.text._ZN8touchgfx8Drawable8setWidthEs))
 <BR>[Address Reference Count : 10]<UL><LI> box.o(.rodata._ZTVN8touchgfx3BoxE)
@@ -6229,8 +6229,8 @@ Global Symbols
 <LI> container.o(.rodata._ZTVN8touchgfx9ContainerE)
 <LI> image.o(.rodata._ZTVN8touchgfx5ImageE)
 <LI> snapshotwidget.o(.rodata._ZTVN8touchgfx14SnapshotWidgetE)
-<LI> circle.o(.rodata._ZTVN8touchgfx6CircleE)
 <LI> canvaswidget.o(.rodata._ZTVN8touchgfx12CanvasWidgetE)
+<LI> circle.o(.rodata._ZTVN8touchgfx6CircleE)
 </UL>
 <P><STRONG><a name="[11c]"></a>touchgfx::Drawable::setHeight(short)</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, customcontainer1.o(.text._ZN8touchgfx8Drawable9setHeightEs))
 <BR>[Address Reference Count : 10]<UL><LI> box.o(.rodata._ZTVN8touchgfx3BoxE)
@@ -6241,16 +6241,16 @@ Global Symbols
 <LI> container.o(.rodata._ZTVN8touchgfx9ContainerE)
 <LI> image.o(.rodata._ZTVN8touchgfx5ImageE)
 <LI> snapshotwidget.o(.rodata._ZTVN8touchgfx14SnapshotWidgetE)
-<LI> circle.o(.rodata._ZTVN8touchgfx6CircleE)
 <LI> canvaswidget.o(.rodata._ZTVN8touchgfx12CanvasWidgetE)
+<LI> circle.o(.rodata._ZTVN8touchgfx6CircleE)
 </UL>
 <P><STRONG><a name="[144]"></a>touchgfx::Drawable::~Drawable__sub_object()</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, box.o(.text._ZN8touchgfx8DrawableD2Ev))
 <BR>[Address Reference Count : 6]<UL><LI> box.o(.rodata._ZTVN8touchgfx3BoxE)
 <LI> container.o(.rodata._ZTVN8touchgfx9ContainerE)
 <LI> image.o(.rodata._ZTVN8touchgfx5ImageE)
 <LI> snapshotwidget.o(.rodata._ZTVN8touchgfx14SnapshotWidgetE)
-<LI> circle.o(.rodata._ZTVN8touchgfx6CircleE)
 <LI> canvaswidget.o(.rodata._ZTVN8touchgfx12CanvasWidgetE)
+<LI> circle.o(.rodata._ZTVN8touchgfx6CircleE)
 </UL>
 <P><STRONG><a name="[3bc]"></a>touchgfx::Gestures::registerDragEvent(unsigned short, unsigned short, unsigned short, unsigned short)</STRONG> (Thumb, 132 bytes, Stack size 48 bytes, gestures.o(.text._ZN8touchgfx8Gestures17registerDragEventEtttt))
 <BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = touchgfx::Gestures::registerDragEvent(unsigned short, unsigned short, unsigned short, unsigned short)
@@ -8014,12 +8014,12 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[2d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;touchgfx::Rect::operator&=(touchgfx::Rect const&)
 </UL>
-<BR>[Address Reference Count : 2]<UL><LI> circle.o(.rodata._ZTVN8touchgfx6CircleE)
-<LI> canvaswidget.o(.rodata._ZTVN8touchgfx12CanvasWidgetE)
+<BR>[Address Reference Count : 2]<UL><LI> canvaswidget.o(.rodata._ZTVN8touchgfx12CanvasWidgetE)
+<LI> circle.o(.rodata._ZTVN8touchgfx6CircleE)
 </UL>
 <P><STRONG><a name="[147]"></a>touchgfx::CanvasWidget::getSolidRect() const</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, circle.o(.text._ZNK8touchgfx12CanvasWidget12getSolidRectEv))
-<BR>[Address Reference Count : 2]<UL><LI> circle.o(.rodata._ZTVN8touchgfx6CircleE)
-<LI> canvaswidget.o(.rodata._ZTVN8touchgfx12CanvasWidgetE)
+<BR>[Address Reference Count : 2]<UL><LI> canvaswidget.o(.rodata._ZTVN8touchgfx12CanvasWidgetE)
+<LI> circle.o(.rodata._ZTVN8touchgfx6CircleE)
 </UL>
 <P><STRONG><a name="[150]"></a>touchgfx::CanvasWidget::getMinimalRect() const</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, canvaswidget.o(.text._ZNK8touchgfx12CanvasWidget14getMinimalRectEv))
 <BR>[Address Reference Count : 1]<UL><LI> canvaswidget.o(.rodata._ZTVN8touchgfx12CanvasWidgetE)
@@ -8030,12 +8030,12 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[353]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;touchgfx::Rect::operator&(touchgfx::Rect const&) const
 <LI><a href="#[4a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OUTLINED_FUNCTION_0
 </UL>
-<BR>[Address Reference Count : 2]<UL><LI> circle.o(.rodata._ZTVN8touchgfx6CircleE)
-<LI> canvaswidget.o(.rodata._ZTVN8touchgfx12CanvasWidgetE)
+<BR>[Address Reference Count : 2]<UL><LI> canvaswidget.o(.rodata._ZTVN8touchgfx12CanvasWidgetE)
+<LI> circle.o(.rodata._ZTVN8touchgfx6CircleE)
 </UL>
 <P><STRONG><a name="[14f]"></a>touchgfx::CanvasWidget::getAlpha() const</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, circle.o(.text._ZNK8touchgfx12CanvasWidget8getAlphaEv))
-<BR>[Address Reference Count : 2]<UL><LI> circle.o(.rodata._ZTVN8touchgfx6CircleE)
-<LI> canvaswidget.o(.rodata._ZTVN8touchgfx12CanvasWidgetE)
+<BR>[Address Reference Count : 2]<UL><LI> canvaswidget.o(.rodata._ZTVN8touchgfx12CanvasWidgetE)
+<LI> circle.o(.rodata._ZTVN8touchgfx6CircleE)
 </UL>
 <P><STRONG><a name="[153]"></a>touchgfx::GestureEvent::getEventType() const</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, screen.o(.text._ZNK8touchgfx12GestureEvent12getEventTypeEv))
 <BR>[Address Reference Count : 1]<UL><LI> screen.o(.rodata._ZTVN8touchgfx12GestureEventE)
@@ -8765,8 +8765,8 @@ Global Symbols
 <LI> image.o(.rodata._ZTVN8touchgfx5ImageE)
 <LI> snapshotwidget.o(.rodata._ZTVN8touchgfx14SnapshotWidgetE)
 <LI> textarea.o(.rodata._ZTVN8touchgfx8TextAreaE)
-<LI> circle.o(.rodata._ZTVN8touchgfx6CircleE)
 <LI> canvaswidget.o(.rodata._ZTVN8touchgfx12CanvasWidgetE)
+<LI> circle.o(.rodata._ZTVN8touchgfx6CircleE)
 </UL>
 <P><STRONG><a name="[111]"></a>touchgfx::Drawable::invalidateRect(touchgfx::Rect&) const</STRONG> (Thumb, 68 bytes, Stack size 16 bytes, drawable.o(.text._ZNK8touchgfx8Drawable14invalidateRectERNS_4RectE))
 <BR><BR>[Stack]<UL><LI>Max Depth = 160 + Unknown Stack Size
@@ -8787,8 +8787,8 @@ Global Symbols
 <LI> image.o(.rodata._ZTVN8touchgfx5ImageE)
 <LI> snapshotwidget.o(.rodata._ZTVN8touchgfx14SnapshotWidgetE)
 <LI> textarea.o(.rodata._ZTVN8touchgfx8TextAreaE)
-<LI> circle.o(.rodata._ZTVN8touchgfx6CircleE)
 <LI> canvaswidget.o(.rodata._ZTVN8touchgfx12CanvasWidgetE)
+<LI> circle.o(.rodata._ZTVN8touchgfx6CircleE)
 </UL>
 <P><STRONG><a name="[390]"></a>touchgfx::Drawable::getAbsoluteRect() const</STRONG> (Thumb, 24 bytes, Stack size 8 bytes, drawable.o(.text._ZNK8touchgfx8Drawable15getAbsoluteRectEv))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = touchgfx::Drawable::getAbsoluteRect() const
@@ -8806,8 +8806,8 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[149]"></a>touchgfx::Drawable::invalidateContent() const</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, drawable.o(.text._ZNK8touchgfx8Drawable17invalidateContentEv))
-<BR>[Address Reference Count : 2]<UL><LI> circle.o(.rodata._ZTVN8touchgfx6CircleE)
-<LI> canvaswidget.o(.rodata._ZTVN8touchgfx12CanvasWidgetE)
+<BR>[Address Reference Count : 2]<UL><LI> canvaswidget.o(.rodata._ZTVN8touchgfx12CanvasWidgetE)
+<LI> circle.o(.rodata._ZTVN8touchgfx6CircleE)
 </UL>
 <P><STRONG><a name="[118]"></a>touchgfx::Drawable::translateRectToAbsolute(touchgfx::Rect&) const</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, drawable.o(.text._ZNK8touchgfx8Drawable23translateRectToAbsoluteERNS_4RectE))
 <BR>[Address Reference Count : 11]<UL><LI> box.o(.rodata._ZTVN8touchgfx3BoxE)
@@ -8819,8 +8819,8 @@ Global Symbols
 <LI> image.o(.rodata._ZTVN8touchgfx5ImageE)
 <LI> snapshotwidget.o(.rodata._ZTVN8touchgfx14SnapshotWidgetE)
 <LI> textarea.o(.rodata._ZTVN8touchgfx8TextAreaE)
-<LI> circle.o(.rodata._ZTVN8touchgfx6CircleE)
 <LI> canvaswidget.o(.rodata._ZTVN8touchgfx12CanvasWidgetE)
+<LI> circle.o(.rodata._ZTVN8touchgfx6CircleE)
 </UL>
 <P><STRONG><a name="[21d]"></a>touchgfx::LCD16bpp::framebufferFormat() const</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, lcd16bpp.o(.text._ZNK8touchgfx8LCD16bpp17framebufferFormatEv))
 <BR>[Address Reference Count : 1]<UL><LI> lcd16bpp.o(.rodata._ZTVN8touchgfx8LCD16bppE)
